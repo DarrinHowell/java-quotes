@@ -2,7 +2,6 @@ import com.google.gson.Gson;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.Reader;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -18,7 +17,7 @@ public class FileReadAndWrite {
 
         // Pass it into a reader(?)
 
-    public static Book[] fileToReaderObject(){
+    public static Quote[] fileToReaderObject(){
         // create the path and read the file
         BufferedReader jsonReader;
 
@@ -34,8 +33,8 @@ public class FileReadAndWrite {
 
         // use Gson to read the data and turn it into a book class
         Gson gson = new Gson();
-        Book[] books = gson.fromJson(jsonReader, Book[].class);
+        Quote[] quotes = gson.fromJson(jsonReader, Quote[].class);
 
-        return books;
+        return quotes;
     }
 }

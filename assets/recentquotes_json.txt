@@ -472,12 +472,12 @@
   },
   {
   "tags": [
-      "books",
+      "quotes",
       "writing"
     ],
   "author": "Charles Dickens",
   "likes": "3245 likes",
-  "text": " “There are books of which the backs and covers are by far the best parts.” "
+  "text": " “There are quotes of which the backs and covers are by far the best parts.” "
   },
   {
   "tags": [],
@@ -517,7 +517,7 @@
   },
   {
   "tags": [
-      "books",
+      "quotes",
       "literature",
       "philosphy",
       "poetry",
@@ -535,11 +535,11 @@
   },
   {
   "tags": [
-      "books"
+      "quotes"
     ],
   "author": "Cassandra Clare",
   "likes": "16746 likes",
-  "text": " “One must always be careful of books, said Tessa, and what is inside them, for words have the power to change us.” "
+  "text": " “One must always be careful of quotes, said Tessa, and what is inside them, for words have the power to change us.” "
   },
   {
   "tags": [
@@ -647,13 +647,13 @@
   {
   "tags": [
       "attributed-no-source",
-      "books",
+      "quotes",
       "simile",
       "soul"
     ],
   "author": "Marcus Tullius Cicero",
   "likes": "107149 likes",
-  "text": " “A room without books is like a body without a soul.” "
+  "text": " “A room without quotes is like a body without a soul.” "
   },
   {
   "tags": [
@@ -763,13 +763,13 @@
   {
   "tags": [
       "attributed-no-source",
-      "books",
+      "quotes",
       "simile",
       "soul"
     ],
   "author": "Marcus Tullius Cicero",
   "likes": "107149 likes",
-  "text": " “A room without books is like a body without a soul.” "
+  "text": " “A room without quotes is like a body without a soul.” "
   },
   {
   "tags": [
@@ -808,12 +808,12 @@
   },
   {
   "tags": [
-      "books",
+      "quotes",
       "humor"
     ],
   "author": "Frank Zappa",
   "likes": "109931 likes",
-  "text": " “So many books, so little time.” "
+  "text": " “So many quotes, so little time.” "
   },
   {
   "tags": [
