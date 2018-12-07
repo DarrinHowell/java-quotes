@@ -3,8 +3,8 @@ public class API_Quote {
     private String senderLink;
     private String quoteLink;
 
-    public Quote(){
-        
-    }
+//    public Quote(){
+//
+//    }
 
 }
