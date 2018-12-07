@@ -1,3 +1,5 @@
+import com.google.gson.Gson;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
@@ -16,7 +18,7 @@ public class FileReadAndWrite {
 
         // Pass it into a reader(?)
 
-    public static BufferedReader fileToReaderObject(){
+    public static Book[] fileToReaderObject(){
         // create the path and read the file
         BufferedReader jsonReader;
 
@@ -26,10 +28,14 @@ public class FileReadAndWrite {
 
         } catch (IOException e) {
             System.out.println(e);
-            jsonReader = null; // do something better practice after base functionality established.
+            return null; // do something better practice after base functionality established.
 
         }
 
-        return jsonReader;
+        // use Gson to read the data and turn it into a book class
+        Gson gson = new Gson();
+        Book[] books = gson.fromJson(jsonReader, Book[].class);
+
+        return books;
     }
 }
