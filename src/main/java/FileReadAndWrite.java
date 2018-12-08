@@ -17,19 +17,12 @@ public class FileReadAndWrite {
 
         // Pass it into a reader(?)
 
-    public static Quote[] fileToReaderObject(){
+    public static Quote[] fileToReaderObject(String directory, String file) throws IOException{
+
         // create the path and read the file
         BufferedReader jsonReader;
-
-        try {
-            Path path = FileSystems.getDefault().getPath("assets", "recentquotes_json.txt");
-            jsonReader = Files.newBufferedReader(path);
-
-        } catch (IOException e) {
-            System.out.println(e);
-            return null; // do something better practice after base functionality established.
-
-        }
+        Path path = FileSystems.getDefault().getPath(directory, file);
+        jsonReader = Files.newBufferedReader(path);
 
         // use Gson to read the data and turn it into a book class
         Gson gson = new Gson();
