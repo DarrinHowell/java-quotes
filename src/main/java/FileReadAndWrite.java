@@ -8,15 +8,6 @@ import java.nio.file.Path;
 
 public class FileReadAndWrite {
 
-    // static methods:
-
-        // Path or File if Path doesn't work
-
-        // Create a new file
-
-
-        // Pass it into a reader(?)
-
     public static Quote[] fileToReaderObject(String directory, String file) throws IOException{
 
         // create the path and read the file
