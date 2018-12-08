@@ -18,7 +18,7 @@ public class App {
             try {
                 String rootDirectory = "assets";
                 String fileName = "recentquotes_json.tx";
-                
+
                 Quote[] quotes = FileReadAndWrite.fileToReaderObject(rootDirectory, fileName);
                 String newQuoteAndAuthor = Randomizer.generateQuoteAndAuthor(quotes);
                 System.out.println(newQuoteAndAuthor);
@@ -28,9 +28,7 @@ public class App {
                 System.out.println("API request failed. Fetching data from file failed: " + err);
 
             }
-
         }
-
     }
 }
 
