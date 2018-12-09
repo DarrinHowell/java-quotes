@@ -4,18 +4,20 @@
 - Darrin Howell
 
 ### Project 
-This application reads a JSON file containing information for book objects and parses through it
-using Google's gson library. After gson parses the JSON file book instances are constructed
-and set them into an array. We then randomly select a book instance from that array and return
-a notable quote and it's author. 
+This application makes a GET request to an API that returns a single random quote via 
+transmission of a JSON object. After receiving this object back, we parse the json data
+with Google's gson tool, converting it into a quote object. After a quote object has been
+instantiated, we print that quote to the console. This new quote object is then appended
+ to our collection of quotes and subsequently written to file. This file is updated
+  every time our API is successfully hit. <br/> 
+
+In the event that our GET request fails, we fall back on a series of backup methods 
+that load in our collection of JSON objects from our hard disk, and we pick a quote
+at random. 
 
 ### Installing Dependencies and Running our App
-For gradle users, go into buiild.gradle and locate the dependencies code block and insert this line:
-implementation 'com.google.code.gson:gson:2.8.5' <br/>
+Dependencies will be installed on your computer after downloading this repo.
 
-Save your project immediately after inserting that snippet so that your editor can download
-and build the new dependencies using gradle. <br/>
-
-Finally, to run our application, run the main method from the App.java file.  
+To run our application, run the main method from the App.java file.  
 
 
