@@ -43,7 +43,7 @@ public class APIQuery {
         Quote transformedQuote = apiQuote.apiQuoteTransformer();
 
         // save quote to list of quote objects in json file
-        cacheQuoteToFile(transformedQuote, directory, file);
+        List<Quote> newJSONList = cacheQuoteToFile(transformedQuote, directory, file);
 
         return transformedQuote;
 
@@ -51,7 +51,7 @@ public class APIQuery {
 
     }
 
-    public static void cacheQuoteToFile(Quote newQuote, String directory, String file){
+    public static List<Quote> cacheQuoteToFile(Quote newQuote, String directory, String file){
 
         try {
             // read in the file
@@ -69,13 +69,16 @@ public class APIQuery {
             try (PrintWriter out = new PrintWriter("./assets/recentquotes_json.txt")) {
                 out.println(jsonArrListReconverted);
                 out.close();
+                return jsonArrList;
 
             } catch (IOException e) {
-                System.out.println("error occured while writing to file: " + e);
+                System.out.println("error occurred while writing to file: " + e);
+                return null;
             }
 
         } catch (IOException e){
             System.out.println("Something went wrong while fetching from file: " + e);
+            return null;
         }
 
     }
